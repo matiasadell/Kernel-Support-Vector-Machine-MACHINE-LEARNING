@@ -1,13 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Mar 18 19:45:15 2019
-
-@author: juangabriel
-"""
-
 # Kernel SVM
-
 
 # Cómo importar las librerías
 import numpy as np
@@ -35,7 +26,7 @@ X_test = sc_X.transform(X_test)
 
 # Ajustar el clasificador en el Conjunto de Entrenamiento
 from sklearn.svm import SVC
-classifier = SVC(kernel = "rbf", random_state = 0)      # rbf : separador gausseano
+classifier = SVC(kernel = "rbf", random_state = 0)     
 classifier.fit(X_train, y_train)
 
 
